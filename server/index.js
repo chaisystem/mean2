@@ -7,6 +7,7 @@ app.set('port', process.env.PORT || 3000); // puerto asignado por el sistema o p
 
 // middlewares
 app.use(morgan('dev')); // muestra informacion de la peticion
+app.use(express.json()); // es para que el servidor pueda interpretar json
 
 //routes
 
