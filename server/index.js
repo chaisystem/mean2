@@ -11,5 +11,5 @@ app.set('port', process.env.PORT || 3000); // puerto asignado por el sistema o p
 //starting the serve
 
 app.listen(app.get('port'),()=>{
-    console.log('server on port 3000')
+    console.log('server on port ',app.get('port'))
 })
