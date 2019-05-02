@@ -1,10 +1,26 @@
+const Employee = require('../models/employee');
+
 const employeeCtrl = {};
 
+employeeCtrl.getEmployees = async (req, res) => {
+    const employees = await Employee.find();
+    res.json(employees);    
+}
+
 employeeCtrl.getEmployee = (req, res) => {
-    // res.send('Hello World');
-    res.json({
-        status: 'API Works, aqui iran los employees'
-    });
+
+}
+
+employeeCtrl.createEmployee = (req, res) => {
+
+}
+
+employeeCtrl.editEmployee = (req, res) => {
+
+}
+
+employeeCtrl.deleteEmployee = (req, res) => {
+
 }
 
 module.exports = employeeCtrl;
