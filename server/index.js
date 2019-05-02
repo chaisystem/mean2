@@ -2,6 +2,8 @@ const express = require('express');
 const morgan = require('morgan');
 const app = express();
 
+const { mongoose } = require('./database');
+
 // settings
 app.set('port', process.env.PORT || 3000); // puerto asignado por el sistema o puerto 3000
 
